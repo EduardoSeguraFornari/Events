@@ -41,6 +41,7 @@
 		91A9E4D123BD50CB00D02C3C /* EventsApiPostEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4D023BD50CB00D02C3C /* EventsApiPostEndpointTests.swift */; };
 		91A9E4D323BD51DD00D02C3C /* EventsApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4D223BD51DD00D02C3C /* EventsApiProvider.swift */; };
 		91A9E4D523BD520000D02C3C /* EventsApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4D423BD520000D02C3C /* EventsApiError.swift */; };
+		91A9E4EF23BD669000D02C3C /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4EE23BD669000D02C3C /* EventViewModel.swift */; };
 		F7D61C8F7F2F9FC245CFC0DC /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		91A9E4D023BD50CB00D02C3C /* EventsApiPostEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsApiPostEndpointTests.swift; sourceTree = "<group>"; };
 		91A9E4D223BD51DD00D02C3C /* EventsApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsApiProvider.swift; sourceTree = "<group>"; };
 		91A9E4D423BD520000D02C3C /* EventsApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsApiError.swift; sourceTree = "<group>"; };
+		91A9E4EE23BD669000D02C3C /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD05A50160000AA79B4297E /* Pods_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBD14641D93D5E21BA9C7A /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			children = (
 				91A9E4AC23BD3CE100D02C3C /* Model */,
 				91A9E4AD23BD3CF900D02C3C /* View */,
+				91A9E4ED23BD667F00D02C3C /* ViewModel */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -364,6 +367,14 @@
 				91A9E4D023BD50CB00D02C3C /* EventsApiPostEndpointTests.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		91A9E4ED23BD667F00D02C3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91A9E4EE23BD669000D02C3C /* EventViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		BA02841331A0A065EF00D02A /* Pods */ = {
@@ -576,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A9E4C023BD40BC00D02C3C /* EventDetail.swift in Sources */,
+				91A9E4EF23BD669000D02C3C /* EventViewModel.swift in Sources */,
 				91A9E4BC23BD3F3100D02C3C /* Person.swift in Sources */,
 				91A9E4B623BD3E2400D02C3C /* Coupon.swift in Sources */,
 				91A9E4AF23BD3D0C00D02C3C /* Event.swift in Sources */,
