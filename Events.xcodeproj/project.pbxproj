@@ -32,6 +32,7 @@
 		91A9E4B623BD3E2400D02C3C /* Coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4B523BD3E2400D02C3C /* Coupon.swift */; };
 		91A9E4BA23BD3EBB00D02C3C /* CouponTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4B923BD3EBB00D02C3C /* CouponTests.swift */; };
 		91A9E4BC23BD3F3100D02C3C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4BB23BD3F3100D02C3C /* Person.swift */; };
+		91A9E4BE23BD3F7100D02C3C /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4BD23BD3F7100D02C3C /* PersonTests.swift */; };
 		F7D61C8F7F2F9FC245CFC0DC /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		91A9E4B523BD3E2400D02C3C /* Coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coupon.swift; sourceTree = "<group>"; };
 		91A9E4B923BD3EBB00D02C3C /* CouponTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTests.swift; sourceTree = "<group>"; };
 		91A9E4BB23BD3F3100D02C3C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		91A9E4BD23BD3F7100D02C3C /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
 		95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD05A50160000AA79B4297E /* Pods_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBD14641D93D5E21BA9C7A /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				91A9E4B923BD3EBB00D02C3C /* CouponTests.swift */,
+				91A9E4BD23BD3F7100D02C3C /* PersonTests.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 			files = (
 				91A9E4BA23BD3EBB00D02C3C /* CouponTests.swift in Sources */,
 				91A9E4B323BD3D8C00D02C3C /* EventTests.swift in Sources */,
+				91A9E4BE23BD3F7100D02C3C /* PersonTests.swift in Sources */,
 				91A9E4AB23BD3C3500D02C3C /* CheckInTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
