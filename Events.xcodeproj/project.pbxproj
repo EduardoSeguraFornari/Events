@@ -101,13 +101,12 @@
 		9174CD4623BD13190028E3E0 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				91A9E49B23BD388200D02C3C /* Features */,
+				91A9E49A23BD386300D02C3C /* Extensions */,
 				91A9E48123BD379A00D02C3C /* Fonts */,
-				9174CD4723BD13190028E3E0 /* AppDelegate.swift */,
-				9174CD5023BD131B0028E3E0 /* Assets.xcassets */,
-				9174CD5223BD131B0028E3E0 /* LaunchScreen.storyboard */,
-				9174CD5523BD131B0028E3E0 /* Info.plist */,
-				91A9E47D23BD374600D02C3C /* ViewController.swift */,
-				91A9E47E23BD374600D02C3C /* ViewController.xib */,
+				91A9E4A123BD394000D02C3C /* Service */,
+				91A9E4A023BD38F200D02C3C /* Storyboards */,
+				91A9E49F23BD38E400D02C3C /* Supporting Files */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -138,6 +137,71 @@
 				91A9E48323BD37B500D02C3C /* Roboto-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		91A9E49A23BD386300D02C3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91A9E49B23BD388200D02C3C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				91A9E49D23BD38AF00D02C3C /* CheckIn */,
+				91A9E49C23BD389800D02C3C /* Events */,
+				91A9E49E23BD38B600D02C3C /* EventDetail */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		91A9E49C23BD389800D02C3C /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				91A9E47D23BD374600D02C3C /* ViewController.swift */,
+				91A9E47E23BD374600D02C3C /* ViewController.xib */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		91A9E49D23BD38AF00D02C3C /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CheckIn;
+			sourceTree = "<group>";
+		};
+		91A9E49E23BD38B600D02C3C /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		91A9E49F23BD38E400D02C3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9174CD4723BD13190028E3E0 /* AppDelegate.swift */,
+				9174CD5023BD131B0028E3E0 /* Assets.xcassets */,
+				9174CD5523BD131B0028E3E0 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91A9E4A023BD38F200D02C3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9174CD5223BD131B0028E3E0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		91A9E4A123BD394000D02C3C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,7 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Events/Info.plist;
+				INFOPLIST_FILE = "Events/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Events/Info.plist;
+				INFOPLIST_FILE = "Events/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
