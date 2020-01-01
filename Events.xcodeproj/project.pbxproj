@@ -11,8 +11,8 @@
 		9174CD4823BD13190028E3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174CD4723BD13190028E3E0 /* AppDelegate.swift */; };
 		9174CD5123BD131B0028E3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5023BD131B0028E3E0 /* Assets.xcassets */; };
 		9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5223BD131B0028E3E0 /* LaunchScreen.storyboard */; };
-		91A9E47F23BD374600D02C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* ViewController.swift */; };
-		91A9E48023BD374600D02C3C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* ViewController.xib */; };
+		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
+		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
 		91A9E48F23BD37B600D02C3C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48323BD37B500D02C3C /* Roboto-ThinItalic.ttf */; };
 		91A9E49023BD37B600D02C3C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48423BD37B500D02C3C /* Roboto-Thin.ttf */; };
@@ -64,8 +64,8 @@
 		9174CD5523BD131B0028E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9174CD5A23BD131B0028E3E0 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9174CD6023BD131B0028E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		91A9E47D23BD374600D02C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		91A9E47E23BD374600D02C3C /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		91A9E48323BD37B500D02C3C /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		91A9E48423BD37B500D02C3C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
@@ -307,8 +307,8 @@
 		91A9E4AD23BD3CF900D02C3C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91A9E47D23BD374600D02C3C /* ViewController.swift */,
-				91A9E47E23BD374600D02C3C /* ViewController.xib */,
+				91A9E47D23BD374600D02C3C /* EventsViewController.swift */,
+				91A9E47E23BD374600D02C3C /* EventsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -472,7 +472,7 @@
 				9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */,
 				91A9E49023BD37B600D02C3C /* Roboto-Thin.ttf in Resources */,
 				91A9E49323BD37B600D02C3C /* Roboto-Black.ttf in Resources */,
-				91A9E48023BD374600D02C3C /* ViewController.xib in Resources */,
+				91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */,
 				91A9E49723BD37B600D02C3C /* Roboto-Light.ttf in Resources */,
 				9174CD5123BD131B0028E3E0 /* Assets.xcassets in Resources */,
 				91A9E49523BD37B600D02C3C /* Roboto-Italic.ttf in Resources */,
@@ -580,7 +580,7 @@
 				91A9E4B623BD3E2400D02C3C /* Coupon.swift in Sources */,
 				91A9E4AF23BD3D0C00D02C3C /* Event.swift in Sources */,
 				91A9E4D323BD51DD00D02C3C /* EventsApiProvider.swift in Sources */,
-				91A9E47F23BD374600D02C3C /* ViewController.swift in Sources */,
+				91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */,
 				91A9E4CF23BD505600D02C3C /* EventsApiPostEndpoint.swift in Sources */,
 				91A9E4CA23BD4F0F00D02C3C /* EventsApiGetEndpoint.swift in Sources */,
 				91A9E4D523BD520000D02C3C /* EventsApiError.swift in Sources */,
