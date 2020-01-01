@@ -26,6 +26,7 @@
 		91A9E49723BD37B600D02C3C /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48B23BD37B600D02C3C /* Roboto-Light.ttf */; };
 		91A9E49823BD37B600D02C3C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48C23BD37B600D02C3C /* Roboto-LightItalic.ttf */; };
 		91A9E49923BD37B600D02C3C /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48D23BD37B600D02C3C /* Roboto-MediumItalic.ttf */; };
+		91A9E4A523BD3B6600D02C3C /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E4A423BD3B6600D02C3C /* CheckIn.swift */; };
 		F7D61C8F7F2F9FC245CFC0DC /* Pods_Events.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		91A9E48B23BD37B600D02C3C /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		91A9E48C23BD37B600D02C3C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		91A9E48D23BD37B600D02C3C /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		91A9E4A423BD3B6600D02C3C /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
 		95BA9D4D51C2302D7D865C32 /* Pods_Events.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Events.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD05A50160000AA79B4297E /* Pods_EventsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EBD14641D93D5E21BA9C7A /* Pods-Events.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Events.debug.xcconfig"; path = "Target Support Files/Pods-Events/Pods-Events.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		91A9E49D23BD38AF00D02C3C /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
+				91A9E4A323BD3B5200D02C3C /* Model */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -223,6 +226,14 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		91A9E4A323BD3B5200D02C3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91A9E4A423BD3B6600D02C3C /* CheckIn.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BA02841331A0A065EF00D02A /* Pods */ = {
@@ -435,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A9E47F23BD374600D02C3C /* ViewController.swift in Sources */,
+				91A9E4A523BD3B6600D02C3C /* CheckIn.swift in Sources */,
 				9174CD4823BD13190028E3E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
