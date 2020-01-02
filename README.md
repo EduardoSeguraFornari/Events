@@ -32,7 +32,6 @@ $ pod install
 - [x] Fetch events
 - [x] Fetch event
 - [x] Check-In
-<br/>
 - Events
 - [x] Show event list
 <br/>
