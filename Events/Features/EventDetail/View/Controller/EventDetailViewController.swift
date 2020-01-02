@@ -7,11 +7,20 @@
 //
 
 import MapKit
+import RxSwift
 import UIKit
 
 class EventDetailViewController: UIViewController {
 
+    private var disposeBag = DisposeBag()
+
+    private var locationManager: CLLocationManager?
+    private var userLocation: CLLocationCoordinate2D?
+
     private let eventViewModel: EventViewModel
+    private lazy var viewModel: EventDetailViewModel = {
+        return EventDetailViewModel(viewModel: eventViewModel)
+    }()
 
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var coverImageView: UIImageView!
@@ -47,6 +56,7 @@ class EventDetailViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationItems()
+        bind()
     }
 
     // MARK: - Navigation Items
@@ -60,6 +70,67 @@ class EventDetailViewController: UIViewController {
                                           target: self,
                                           action: #selector(shareButtonDidTap))
         navigationItem.rightBarButtonItems = [shareButton]
+    }
+
+    // MARK: - Bind
+    private func bind() {
+
+        viewModel.title
+            .bind(to: titleLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.imageURL.subscribe { result in
+            if let imageURL = result.element {
+                self.coverImageView.loadImage(imageURL)
+            }
+        }.disposed(by: disposeBag)
+
+        viewModel.date
+            .bind(to: dateValueLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.price
+            .bind(to: priceValueLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.eventDescription
+            .bind(to: descriptionLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.address
+            .bind(to: addressValueLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.location.subscribe { result in
+            if let element = result.element, let location = element {
+                self.setMap(with: location)
+            }
+        }.disposed(by: disposeBag)
+
+        viewModel.peopleDataSource.delegate = peopleCollectionView
+        peopleCollectionView.dataSource = viewModel.peopleDataSource
+
+        viewModel.couponsDataSource.delegate = couponsCollectionView
+        couponsCollectionView.dataSource = viewModel.couponsDataSource
+    }
+
+    // MARK: - Map
+    private func setMap(with location: CLLocationCoordinate2D) {
+        if let altitude = CLLocationDistance(exactly: 2_000) {
+            mapView.camera.altitude = altitude
+        }
+        mapView.isZoomEnabled = true
+        mapView.isScrollEnabled = true
+        mapView.isUserInteractionEnabled = true
+        mapView.showsUserLocation = true
+        mapView.setCenter(location, animated: false)
+        let annotation = MKPointAnnotation()
+        annotation.title = viewModel.title.value
+        annotation.coordinate = location
+        mapView.addAnnotation(annotation)
+
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager = CLLocationManager()
+            locationManager?.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager?.requestWhenInUseAuthorization()
+            locationManager?.startUpdatingLocation()
+        }
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -78,5 +149,14 @@ class EventDetailViewController: UIViewController {
     // MARK: - Share
     @objc private func shareButtonDidTap() {
         print("Share")
+    }
+}
+
+// MARK: - CLLocationManagerDelegate
+extension EventDetailViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            userLocation = location.coordinate
+        }
     }
 }
