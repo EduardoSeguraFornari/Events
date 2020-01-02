@@ -40,6 +40,7 @@
 		919C588F23BDA25200A82714 /* UIViewControler+share.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588E23BDA25200A82714 /* UIViewControler+share.swift */; };
 		919C589323BDA4D900A82714 /* CheckinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589123BDA4D900A82714 /* CheckinViewController.swift */; };
 		919C589423BDA4D900A82714 /* CheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C589223BDA4D900A82714 /* CheckinViewController.xib */; };
+		919C589823BDA8D600A82714 /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589723BDA8D500A82714 /* CheckInViewModel.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -123,6 +124,7 @@
 		919C588E23BDA25200A82714 /* UIViewControler+share.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewControler+share.swift"; sourceTree = "<group>"; };
 		919C589123BDA4D900A82714 /* CheckinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinViewController.swift; sourceTree = "<group>"; };
 		919C589223BDA4D900A82714 /* CheckinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckinViewController.xib; sourceTree = "<group>"; };
+		919C589723BDA8D500A82714 /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -350,6 +352,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		919C589623BDA8CA00A82714 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				919C589723BDA8D500A82714 /* CheckInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +404,7 @@
 			children = (
 				91A9E4A323BD3B5200D02C3C /* Model */,
 				919C589523BDA5A500A82714 /* View */,
+				919C589623BDA8CA00A82714 /* ViewModel */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -783,6 +794,7 @@
 				919C587723BD93EA00A82714 /* CouponViewModel.swift in Sources */,
 				91A9E4CF23BD505600D02C3C /* EventsApiPostEndpoint.swift in Sources */,
 				919C588123BD98FA00A82714 /* Date+formatedAsShort.swift in Sources */,
+				919C589823BDA8D600A82714 /* CheckInViewModel.swift in Sources */,
 				919C586A23BD912900A82714 /* PersonViewModel.swift in Sources */,
 				919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */,
 				91A9E4CA23BD4F0F00D02C3C /* EventsApiGetEndpoint.swift in Sources */,
