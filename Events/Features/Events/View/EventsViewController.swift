@@ -10,10 +10,19 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    @IBOutlet private weak var collectionView: UICollectionView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupNavigationItems()
     }
 
+    // MARK: - Navigation Items
+    private func setupNavigationItems() {
+        title = "Events"
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        }
+    }
 }

@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let viewController = EventsViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.navigationBar.tintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = .white
