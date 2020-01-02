@@ -24,7 +24,11 @@ class EventDetailViewController: UIViewController {
     @IBOutlet private weak var addressValueLabel: UILabel!
     @IBOutlet private weak var mapView: MKMapView!
     @IBOutlet private weak var peopleLabel: UILabel!
-    @IBOutlet private weak var peopleCollectionView: UICollectionView!
+    @IBOutlet private weak var peopleCollectionView: UICollectionView! {
+        didSet {
+            peopleCollectionView.register(of: PersonCollectionViewCell.self)
+        }
+    }
     @IBOutlet private weak var couponsLabel: UILabel!
     @IBOutlet private weak var couponsCollectionView: UICollectionView!
     @IBOutlet private weak var checkInButton: UIButton!
