@@ -161,7 +161,24 @@ class EventDetailViewController: UIViewController {
 
     // MARK: - Share
     @objc private func shareButtonDidTap() {
-        print("Share")
+        let title = "See this event I found in the Events app:"
+        let eventTitle = viewModel.title.value
+        let priceTitle = "Price"
+        let price = viewModel.price.value
+        let dateTitle = "When"
+        let date = viewModel.date.value
+        let description = viewModel.eventDescription.value
+        let text = """
+        \(title)
+
+        \(eventTitle)
+
+        \(description)
+
+        \(dateTitle): \(date)
+        \(priceTitle): \(price)
+        """
+        share(items: [text])
     }
 
     // MARK: - Alerts
