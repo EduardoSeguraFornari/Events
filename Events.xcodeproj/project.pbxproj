@@ -30,6 +30,7 @@
 		919C587923BD942B00A82714 /* CouponViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587823BD942B00A82714 /* CouponViewModelTests.swift */; };
 		919C587C23BD94B300A82714 /* CouponCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587A23BD94B300A82714 /* CouponCollectionViewCell.swift */; };
 		919C587D23BD94B300A82714 /* CouponCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C587B23BD94B300A82714 /* CouponCollectionViewCell.xib */; };
+		919C588123BD98FA00A82714 /* Date+formatedAsShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -103,6 +104,7 @@
 		919C587823BD942B00A82714 /* CouponViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewModelTests.swift; sourceTree = "<group>"; };
 		919C587A23BD94B300A82714 /* CouponCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCollectionViewCell.swift; sourceTree = "<group>"; };
 		919C587B23BD94B300A82714 /* CouponCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponCollectionViewCell.xib; sourceTree = "<group>"; };
+		919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+formatedAsShort.swift"; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 		919C584C23BD85DF00A82714 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */,
 				919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */,
 				919C585323BD878100A82714 /* UIImageView+loadImage.swift */,
 				919C585123BD874200A82714 /* UIView+LayerInspectable.swift */,
@@ -731,6 +734,7 @@
 				91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */,
 				919C587723BD93EA00A82714 /* CouponViewModel.swift in Sources */,
 				91A9E4CF23BD505600D02C3C /* EventsApiPostEndpoint.swift in Sources */,
+				919C588123BD98FA00A82714 /* Date+formatedAsShort.swift in Sources */,
 				919C586A23BD912900A82714 /* PersonViewModel.swift in Sources */,
 				919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */,
 				91A9E4CA23BD4F0F00D02C3C /* EventsApiGetEndpoint.swift in Sources */,
