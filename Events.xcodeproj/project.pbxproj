@@ -36,6 +36,7 @@
 		919C588723BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */; };
 		919C588923BD9A3D00A82714 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588823BD9A3D00A82714 /* EventDetailViewModel.swift */; };
 		919C588B23BD9FB900A82714 /* MKMapView+routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588A23BD9FB900A82714 /* MKMapView+routes.swift */; };
+		919C588D23BDA02400A82714 /* MKMapView+ZoomOutForLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588C23BDA02300A82714 /* MKMapView+ZoomOutForLocations.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -115,6 +116,7 @@
 		919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView&UIViewController+lock+unlock.swift"; sourceTree = "<group>"; };
 		919C588823BD9A3D00A82714 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		919C588A23BD9FB900A82714 /* MKMapView+routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+routes.swift"; sourceTree = "<group>"; };
+		919C588C23BDA02300A82714 /* MKMapView+ZoomOutForLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMapView+ZoomOutForLocations.swift"; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */,
 				919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */,
 				919C588A23BD9FB900A82714 /* MKMapView+routes.swift */,
+				919C588C23BDA02300A82714 /* MKMapView+ZoomOutForLocations.swift */,
 				919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */,
 				919C585323BD878100A82714 /* UIImageView+loadImage.swift */,
 				919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */,
@@ -737,6 +740,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919C588D23BDA02400A82714 /* MKMapView+ZoomOutForLocations.swift in Sources */,
 				919C585723BD87E500A82714 /* EventCollectionViewCell.swift in Sources */,
 				919C588B23BD9FB900A82714 /* MKMapView+routes.swift in Sources */,
 				919C588523BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift in Sources */,
