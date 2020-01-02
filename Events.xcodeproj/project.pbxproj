@@ -20,6 +20,8 @@
 		919C585823BD87E500A82714 /* EventCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C585623BD87E500A82714 /* EventCollectionViewCell.xib */; };
 		919C585C23BD890800A82714 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C585B23BD890800A82714 /* EventListViewModel.swift */; };
 		919C585E23BD895500A82714 /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C585D23BD895500A82714 /* EventListViewModelTests.swift */; };
+		919C586723BD8E1F00A82714 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C586523BD8E1F00A82714 /* EventDetailViewController.swift */; };
+		919C586823BD8E1F00A82714 /* EventDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C586623BD8E1F00A82714 /* EventDetailViewController.xib */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -83,6 +85,8 @@
 		919C585623BD87E500A82714 /* EventCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCollectionViewCell.xib; sourceTree = "<group>"; };
 		919C585B23BD890800A82714 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		919C585D23BD895500A82714 /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
+		919C586523BD8E1F00A82714 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		919C586623BD8E1F00A82714 /* EventDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventDetailViewController.xib; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -238,6 +242,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		919C586423BD8E0900A82714 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				919C586523BD8E1F00A82714 /* EventDetailViewController.swift */,
+				919C586623BD8E1F00A82714 /* EventDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +301,7 @@
 		91A9E49E23BD38B600D02C3C /* EventDetail */ = {
 			isa = PBXGroup;
 			children = (
+				919C586423BD8E0900A82714 /* Controller */,
 				91A9E4B423BD3E1600D02C3C /* Model */,
 			);
 			path = EventDetail;
@@ -543,6 +557,7 @@
 				9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */,
 				91A9E49023BD37B600D02C3C /* Roboto-Thin.ttf in Resources */,
 				91A9E49323BD37B600D02C3C /* Roboto-Black.ttf in Resources */,
+				919C586823BD8E1F00A82714 /* EventDetailViewController.xib in Resources */,
 				91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */,
 				91A9E49723BD37B600D02C3C /* Roboto-Light.ttf in Resources */,
 				9174CD5123BD131B0028E3E0 /* Assets.xcassets in Resources */,
@@ -647,6 +662,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				919C585723BD87E500A82714 /* EventCollectionViewCell.swift in Sources */,
+				919C586723BD8E1F00A82714 /* EventDetailViewController.swift in Sources */,
 				919C585423BD878100A82714 /* UIImageView+loadImage.swift in Sources */,
 				91A9E4C023BD40BC00D02C3C /* EventDetail.swift in Sources */,
 				91A9E4EF23BD669000D02C3C /* EventViewModel.swift in Sources */,

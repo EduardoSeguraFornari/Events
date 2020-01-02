@@ -46,6 +46,7 @@ class EventsViewController: UIViewController {
 extension EventsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let eventViewModel = viewModel.model(at: indexPath.row)
-        print(eventViewModel.title.value)
+        let viewController = EventDetailViewController(viewModel: eventViewModel)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
