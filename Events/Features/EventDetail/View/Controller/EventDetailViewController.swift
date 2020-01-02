@@ -111,6 +111,7 @@ class EventDetailViewController: UIViewController {
 
     // MARK: - Map
     private func setMap(with location: CLLocationCoordinate2D) {
+        mapView.delegate = self
         if let altitude = CLLocationDistance(exactly: 2_000) {
             mapView.camera.altitude = altitude
         }
@@ -138,7 +139,19 @@ class EventDetailViewController: UIViewController {
     }
 
     @IBAction func userLocationButtonDidTap(_ sender: UIButton) {
-        print("Location")
+        if let eventLocation = viewModel.location.value,
+            let userLocation = userLocation {
+            let locations = [userLocation, eventLocation]
+
+            mapView.requestRoutes(from: userLocation, to: eventLocation) { routes, _ in
+                if let route = routes?.first {
+                    self.mapView.drawRoutes([route])
+                    self.mapView.zoomOut(for: locations)
+                } else {
+                    self.mapView.zoomOut(for: locations)
+                }
+            }
+        }
     }
 
     // MARK: - CheckIn
@@ -174,5 +187,17 @@ extension EventDetailViewController: CLLocationManagerDelegate {
         if let location = locations.last {
             userLocation = location.coordinate
         }
+    }
+}
+
+// MARK: - MKMapViewDelegate
+extension EventDetailViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        var renderer = MKPolylineRenderer(overlay: overlay)
+        if let polyline = overlay as? MKPolyline {
+            renderer = MKPolylineRenderer(polyline: polyline)
+            renderer.strokeColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
+        }
+        return renderer
     }
 }
