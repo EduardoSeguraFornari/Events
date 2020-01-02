@@ -156,7 +156,9 @@ class EventDetailViewController: UIViewController {
 
     // MARK: - CheckIn
     @IBAction func checkInButtonDidTap(_ sender: UIButton) {
-        print("Check-In")
+        let eventId = viewModel.eventId.value
+        let viewController = CheckinViewController(eventId: eventId)
+        present(viewController, animated: true)
     }
 
     // MARK: - Share
