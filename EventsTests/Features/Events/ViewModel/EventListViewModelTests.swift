@@ -44,7 +44,7 @@ class EventListViewModelTests: XCTestCase {
                 return EventViewModel(event: event)
             }
             eventListViewModel.eventsDataSource.updateItems(eventsViewModels)
-            
+
             let eventViewModel0 = eventListViewModel.model(at: 0)
             let eventViewModel1 = eventListViewModel.model(at: 1)
             let eventViewModel2 = eventListViewModel.model(at: 2)
