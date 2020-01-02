@@ -34,6 +34,7 @@
 		919C588323BD993B00A82714 /* Double+formatedAsCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */; };
 		919C588523BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588423BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift */; };
 		919C588723BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */; };
+		919C588923BD9A3D00A82714 /* EventDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588823BD9A3D00A82714 /* EventDetailViewModel.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -111,6 +112,7 @@
 		919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+formatedAsCurrency.swift"; sourceTree = "<group>"; };
 		919C588423BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+getAddress.swift"; sourceTree = "<group>"; };
 		919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView&UIViewController+lock+unlock.swift"; sourceTree = "<group>"; };
+		919C588823BD9A3D00A82714 /* EventDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewModel.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -282,8 +284,9 @@
 		919C586B23BD913A00A82714 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				919C586923BD912900A82714 /* PersonViewModel.swift */,
 				919C587623BD93EA00A82714 /* CouponViewModel.swift */,
+				919C588823BD9A3D00A82714 /* EventDetailViewModel.swift */,
+				919C586923BD912900A82714 /* PersonViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 				919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */,
 				91A9E4CA23BD4F0F00D02C3C /* EventsApiGetEndpoint.swift in Sources */,
 				91A9E4D523BD520000D02C3C /* EventsApiError.swift in Sources */,
+				919C588923BD9A3D00A82714 /* EventDetailViewModel.swift in Sources */,
 				919C585223BD874200A82714 /* UIView+LayerInspectable.swift in Sources */,
 				91A9E4A523BD3B6600D02C3C /* CheckIn.swift in Sources */,
 				919C587C23BD94B300A82714 /* CouponCollectionViewCell.swift in Sources */,
