@@ -43,6 +43,7 @@
 		919C589823BDA8D600A82714 /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589723BDA8D500A82714 /* CheckInViewModel.swift */; };
 		919C589A23BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589923BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift */; };
 		919C589E23BDB01E00A82714 /* String+isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589D23BDB01E00A82714 /* String+isValidEmail.swift */; };
+		919C58A023BDB13E00A82714 /* CheckInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -129,6 +130,7 @@
 		919C589723BDA8D500A82714 /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
 		919C589923BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentSimpleAlert.swift"; sourceTree = "<group>"; };
 		919C589D23BDB01E00A82714 /* String+isValidEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+isValidEmail.swift"; sourceTree = "<group>"; };
+		919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModelTests.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -366,6 +368,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		919C58A123BDB17100A82714 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				91A9E4A923BD3C2B00D02C3C /* Model */,
+				919C58A123BDB17100A82714 /* ViewModel */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -827,6 +838,7 @@
 			files = (
 				919C587923BD942B00A82714 /* CouponViewModelTests.swift in Sources */,
 				91A9E4BA23BD3EBB00D02C3C /* CouponTests.swift in Sources */,
+				919C58A023BDB13E00A82714 /* CheckInViewModelTests.swift in Sources */,
 				91A9E4B323BD3D8C00D02C3C /* EventTests.swift in Sources */,
 				91A9E4C223BD413400D02C3C /* EventDetailTests.swift in Sources */,
 				91A9E4CD23BD4FE500D02C3C /* EventsApiGetEndpointTests.swift in Sources */,

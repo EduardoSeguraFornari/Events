@@ -33,7 +33,7 @@ class CheckInViewModel {
     }()
 
     // MARK: - Init
-    init(eventId: String, delegate: CheckinViewController) {
+    init(eventId: String, delegate: CheckinViewController? = nil) {
         self.eventId = eventId
         self.delegate = delegate
     }
