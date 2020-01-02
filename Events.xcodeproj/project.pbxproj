@@ -11,6 +11,7 @@
 		9174CD4823BD13190028E3E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9174CD4723BD13190028E3E0 /* AppDelegate.swift */; };
 		9174CD5123BD131B0028E3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5023BD131B0028E3E0 /* Assets.xcassets */; };
 		9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5223BD131B0028E3E0 /* LaunchScreen.storyboard */; };
+		919C584623BD848B00A82714 /* EventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C584523BD848B00A82714 /* EventViewModelTests.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -65,6 +66,7 @@
 		9174CD5523BD131B0028E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9174CD5A23BD131B0028E3E0 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9174CD6023BD131B0028E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		919C584523BD848B00A82714 /* EventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModelTests.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 				9174CD6023BD131B0028E3E0 /* Info.plist */,
 			);
 			path = EventsTests;
+			sourceTree = "<group>";
+		};
+		919C584423BD847900A82714 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				919C584523BD848B00A82714 /* EventViewModelTests.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
@@ -320,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				91A9E4B123BD3D8000D02C3C /* Model */,
+				919C584423BD847900A82714 /* ViewModel */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -610,6 +621,7 @@
 				91A9E4C223BD413400D02C3C /* EventDetailTests.swift in Sources */,
 				91A9E4CD23BD4FE500D02C3C /* EventsApiGetEndpointTests.swift in Sources */,
 				91A9E4D123BD50CB00D02C3C /* EventsApiPostEndpointTests.swift in Sources */,
+				919C584623BD848B00A82714 /* EventViewModelTests.swift in Sources */,
 				91A9E4BE23BD3F7100D02C3C /* PersonTests.swift in Sources */,
 				91A9E4AB23BD3C3500D02C3C /* CheckInTests.swift in Sources */,
 			);
