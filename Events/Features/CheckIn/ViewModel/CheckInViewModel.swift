@@ -12,6 +12,8 @@ import RxSwift
 
 class CheckInViewModel {
 
+    private weak var delegate: CheckinViewController?
+
     private let eventId: String
 
     var name = BehaviorRelay<String>(value: "")
@@ -26,8 +28,9 @@ class CheckInViewModel {
     }()
 
     // MARK: - Init
-    init(eventId: String) {
+    init(eventId: String, delegate: CheckinViewController) {
         self.eventId = eventId
+        self.delegate = delegate
     }
 
     func doCheckIn() {
@@ -36,12 +39,12 @@ class CheckInViewModel {
         let checkIn = CheckIn(eventId: eventId, name: name, email: email)
 
         let apiProvider = EventsApiProvider()
-        apiProvider.request(for: .checkin(checkIn)) { (result) in
+        apiProvider.request(for: .checkin(checkIn)) { [delegate] (result) in
             switch result {
             case .success:
-                print("success")
+                delegate?.showCheckInSuccessMessage()
             case .failure:
-                print("failure")
+                delegate?.showCheckInErrorMessage()
             }
         }
     }

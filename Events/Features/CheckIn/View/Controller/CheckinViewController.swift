@@ -15,7 +15,7 @@ class CheckinViewController: UIViewController {
 
     private let eventId: String
     private lazy var viewModel: CheckInViewModel = {
-        return CheckInViewModel(eventId: eventId)
+        return CheckInViewModel(eventId: eventId, delegate: self)
     }()
 
     @IBOutlet private weak var scrollView: UIScrollView!
@@ -83,6 +83,28 @@ class CheckinViewController: UIViewController {
 
     @IBAction func cancelButtonDidTap(_ sender: UIButton) {
         dismiss(animated: true)
+    }
+
+    // MARK: - Alerts
+    func showCheckInSuccessMessage() {
+        DispatchQueue.main.async {
+            let title = "Your presence was confirmed"
+            let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+
+            let okAction = UIAlertAction(title: "Uhul", style: UIAlertAction.Style.cancel) { _ in
+                self.dismiss(animated: true)
+            }
+            alertController.addAction(okAction)
+
+            self.present(alertController, animated: true)
+        }
+    }
+
+    func showCheckInErrorMessage() {
+        DispatchQueue.main.async {
+            let title = "Sorry, we couldn't confirm your presence. Please try again in a few minutes."
+            self.presentSimpleAlert(title: title, buttonTitle: "OK")
+        }
     }
 
     // MARK: - Keyboard Observers
