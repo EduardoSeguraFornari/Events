@@ -7,10 +7,16 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController" customModule="Events" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="1Fa-of-NiS" id="4sa-Mr-0bK"/>
+                <outlet property="pullToRefreshLabel" destination="hYc-oT-ULf" id="90F-Nd-fcb"/>
                 <outlet property="view" destination="MFk-fq-ncb" id="xbK-gj-9TO"/>
             </connections>
         </placeholder>
@@ -30,13 +36,23 @@
                     </collectionViewFlowLayout>
                     <cells/>
                 </collectionView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull to refresh" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYc-oT-ULf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="1Fa-of-NiS" firstAttribute="top" secondItem="mPm-dA-wTk" secondAttribute="top" id="2ah-jJ-VDy"/>
+                <constraint firstItem="1Fa-of-NiS" firstAttribute="top" secondItem="MFk-fq-ncb" secondAttribute="top" constant="44" id="2ah-jJ-VDy"/>
+                <constraint firstItem="mPm-dA-wTk" firstAttribute="bottom" secondItem="hYc-oT-ULf" secondAttribute="bottom" id="BRo-MY-ndI"/>
                 <constraint firstItem="1Fa-of-NiS" firstAttribute="leading" secondItem="mPm-dA-wTk" secondAttribute="leading" id="KMO-XU-OW7"/>
                 <constraint firstItem="mPm-dA-wTk" firstAttribute="bottom" secondItem="1Fa-of-NiS" secondAttribute="bottom" id="SZy-PA-0aL"/>
+                <constraint firstItem="mPm-dA-wTk" firstAttribute="trailing" secondItem="hYc-oT-ULf" secondAttribute="trailing" id="aHk-33-lzZ"/>
+                <constraint firstItem="hYc-oT-ULf" firstAttribute="top" secondItem="mPm-dA-wTk" secondAttribute="top" id="ahd-EQ-vd0"/>
                 <constraint firstItem="mPm-dA-wTk" firstAttribute="trailing" secondItem="1Fa-of-NiS" secondAttribute="trailing" id="arQ-7b-mDY"/>
+                <constraint firstItem="hYc-oT-ULf" firstAttribute="leading" secondItem="mPm-dA-wTk" secondAttribute="leading" id="wdx-kD-L1m"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="mPm-dA-wTk"/>
             <point key="canvasLocation" x="472" y="772"/>

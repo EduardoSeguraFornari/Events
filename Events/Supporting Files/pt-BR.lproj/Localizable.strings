@@ -43,6 +43,10 @@
 
 "Fetching events..." = "Buscando eventos...";
 
+"Sorry, we couldn't load the events list. Please try again in a few minutes." = "Desculpe, não conseguimos carregar a lista de eventos. Por favor, tente novamente em alguns minutos.";
+
+"Pull to refresh" = "Puxe para recarregar";
+
 // ---------- Share ----------
 "See this event I found in the Events app:" = "Veja esse evento que eu encontrei no aplicativo Eventos:";
 

@@ -16,6 +16,8 @@ class EventsViewController: UIViewController {
 
     let refreshControl = UIRefreshControl()
 
+    @IBOutlet private weak var pullToRefreshLabel: UILabel!
+
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -34,6 +36,7 @@ class EventsViewController: UIViewController {
     // MARK: - Localize
     private func localize() {
         title = "App name".localized
+        pullToRefreshLabel.text = "Pull to refresh".localized
     }
 
     // MARK: - Navigation Items
@@ -53,9 +56,22 @@ class EventsViewController: UIViewController {
         collectionView.dataSource = viewModel.eventsDataSource
     }
 
-    func stopRefresh() {
+    // MARK: - Alerts
+    func didntLoadEvents() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.refreshControl.endRefreshing()
+
+            let title = "Sorry, we couldn't load the events list. Please try again in a few minutes.".localized
+            self.presentSimpleAlert(title: title, buttonTitle: "OK")
+
+            self.pullToRefreshLabel.isHidden = false
+        }
+    }
+
+    func didLoadEvents() {
         DispatchQueue.main.async {
             self.refreshControl.endRefreshing()
+            self.pullToRefreshLabel.isHidden = true
         }
     }
 

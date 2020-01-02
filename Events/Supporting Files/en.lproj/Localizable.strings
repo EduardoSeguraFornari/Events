@@ -42,6 +42,10 @@
 "Sorry, we couldn't load event data. Please try again in a few minutes." = "Sorry, we couldn't load event data. Please try again in a few minutes.";
 
 "Fetching events..." = "Fetching events...";
+
+"Sorry, we couldn't load the events list. Please try again in a few minutes." = "Sorry, we couldn't load the events list. Please try again in a few minutes.";
+
+"Pull to refresh" = "Pull to refresh";
 // ---------- Share ----------
 "See this event I found in the Events app:" = "See this event I found in the Events app:";
 

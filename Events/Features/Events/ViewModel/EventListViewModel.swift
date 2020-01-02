@@ -29,23 +29,22 @@ class EventListViewModel {
         let apiProvider = EventsApiProvider()
         apiProvider.request(for: EventsApiGetEndpoint.events) { [weak self] (result: Result<[Event], Error>) in
 
-            self?.delegate?.stopRefresh()
-
             switch result {
             case .success(let events):
                 let eventViewModels = events.compactMap({ event -> EventViewModel? in
                     return EventViewModel(event: event)
                 })
                 self?.setup(with: eventViewModels)
-            case .failure(let error):
+            case .failure:
                 self?.setup(with: [])
-                print(error.localizedDescription)
+                self?.delegate?.didntLoadEvents()
             }
         }
     }
 
     private func setup(with viewModels: [EventViewModel]) {
         DispatchQueue.main.async {
+            self.delegate?.didLoadEvents()
             self.eventsDataSource.updateItems(viewModels)
         }
     }
