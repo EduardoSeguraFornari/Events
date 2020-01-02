@@ -45,6 +45,8 @@
 		919C589E23BDB01E00A82714 /* String+isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589D23BDB01E00A82714 /* String+isValidEmail.swift */; };
 		919C58A023BDB13E00A82714 /* CheckInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */; };
 		919C58AF23BDB6B000A82714 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C58AE23BDB6B000A82714 /* String+localized.swift */; };
+		919C58CE23BDBE3A00A82714 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 919C58D023BDBE3A00A82714 /* InfoPlist.strings */; };
+		919C58D123BDBE3D00A82714 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 919C58D323BDBE3D00A82714 /* Localizable.strings */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -133,6 +135,10 @@
 		919C589D23BDB01E00A82714 /* String+isValidEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+isValidEmail.swift"; sourceTree = "<group>"; };
 		919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModelTests.swift; sourceTree = "<group>"; };
 		919C58AE23BDB6B000A82714 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		919C58CF23BDBE3A00A82714 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		919C58D223BDBE3D00A82714 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		919C58D423BDBE4800A82714 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		919C58D523BDBE4800A82714 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -444,6 +450,8 @@
 				9174CD4723BD13190028E3E0 /* AppDelegate.swift */,
 				9174CD5023BD131B0028E3E0 /* Assets.xcassets */,
 				9174CD5523BD131B0028E3E0 /* Info.plist */,
+				919C58D023BDBE3A00A82714 /* InfoPlist.strings */,
+				919C58D323BDBE3D00A82714 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -662,6 +670,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 9174CD3B23BD13190028E3E0;
 			productRefGroup = 9174CD4523BD13190028E3E0 /* Products */;
@@ -688,7 +697,9 @@
 				919C589423BDA4D900A82714 /* CheckinViewController.xib in Resources */,
 				91A9E49123BD37B600D02C3C /* Roboto-Regular.ttf in Resources */,
 				919C587D23BD94B300A82714 /* CouponCollectionViewCell.xib in Resources */,
+				919C58CE23BDBE3A00A82714 /* InfoPlist.strings in Resources */,
 				919C587323BD921E00A82714 /* PersonCollectionViewCell.xib in Resources */,
+				919C58D123BDBE3D00A82714 /* Localizable.strings in Resources */,
 				91A9E49223BD37B600D02C3C /* Roboto-BoldItalic.ttf in Resources */,
 				9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */,
 				91A9E49023BD37B600D02C3C /* Roboto-Thin.ttf in Resources */,
@@ -874,6 +885,24 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		919C58D023BDBE3A00A82714 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919C58CF23BDBE3A00A82714 /* en */,
+				919C58D423BDBE4800A82714 /* pt-BR */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		919C58D323BDBE3D00A82714 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				919C58D223BDBE3D00A82714 /* en */,
+				919C58D523BDBE4800A82714 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -881,6 +910,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -941,6 +971,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

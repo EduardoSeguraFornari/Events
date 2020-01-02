@@ -55,13 +55,23 @@ class EventDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        localize()
         setupNavigationItems()
         bind()
     }
 
+    // MARK: - Localize
+    private func localize() {
+        title = "Event".localized
+        dateLabel.text = "When".localized
+        priceLabel.text = "Price".localized
+        addressLabel.text = "Address".localized
+        peopleLabel.text = "People".localized
+        couponsLabel.text = "Coupons".localized
+    }
+
     // MARK: - Navigation Items
     private func setupNavigationItems() {
-        title = "Event"
         if #available(iOS 11.0, *) {
             navigationItem.largeTitleDisplayMode = .never
         }
@@ -163,11 +173,11 @@ class EventDetailViewController: UIViewController {
 
     // MARK: - Share
     @objc private func shareButtonDidTap() {
-        let title = "See this event I found in the Events app:"
+        let title = "See this event I found in the Events app:".localized
         let eventTitle = viewModel.title.value
-        let priceTitle = "Price"
+        let priceTitle = "Price".localized
         let price = viewModel.price.value
-        let dateTitle = "When"
+        let dateTitle = "When".localized
         let date = viewModel.date.value
         let description = viewModel.eventDescription.value
         let text = """
@@ -186,7 +196,7 @@ class EventDetailViewController: UIViewController {
     // MARK: - Alerts
     func showLoadDataErrorMessage() {
         DispatchQueue.main.async {
-            let title = "Sorry, we couldn't load event data. Please try again in a few minutes."
+            let title = "Sorry, we couldn't load event data. Please try again in a few minutes.".localized
             let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 
             let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { _ in

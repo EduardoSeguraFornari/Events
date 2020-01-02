@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Events
+
+  Created by Eduardo Fornari on 02/01/20.
+  Copyright © 2020 Eduardo Fornari. All rights reserved.
+*/
+
+"CFBundleDisplayName" = "Eventos";
+"CFBundleName" = "Eventos";

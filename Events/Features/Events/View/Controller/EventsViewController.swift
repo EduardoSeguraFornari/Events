@@ -22,13 +22,18 @@ class EventsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        localize()
         setupNavigationItems()
         bind()
     }
 
+    // MARK: - Localize
+    private func localize() {
+        title = "App name".localized
+    }
+
     // MARK: - Navigation Items
     private func setupNavigationItems() {
-        title = "Events"
         if #available(iOS 11.0, *) {
             navigationController?.navigationBar.prefersLargeTitles = true
         }

@@ -40,6 +40,7 @@ class CheckinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        localize()
         bind()
     }
 
@@ -51,6 +52,14 @@ class CheckinViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         removeKeyboardObservers()
+    }
+
+    // MARK: - Localize
+    private func localize() {
+         confirmPresenceLabel.text = "Confirm presence".localized
+         nameTextField.placeholder = "Name".localized
+         confirmButton.setTitle("Confirm".localized, for: .normal)
+         cancelButton.setTitle("Cancel".localized, for: .normal)
     }
 
     // MARK: - Bind
@@ -88,7 +97,7 @@ class CheckinViewController: UIViewController {
     // MARK: - Alerts
     func showCheckInSuccessMessage() {
         DispatchQueue.main.async {
-            let title = "Your presence was confirmed"
+            let title = "Your presence was confirmed".localized
             let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
 
             let okAction = UIAlertAction(title: "Uhul", style: UIAlertAction.Style.cancel) { _ in
@@ -102,14 +111,14 @@ class CheckinViewController: UIViewController {
 
     func showCheckInErrorMessage() {
         DispatchQueue.main.async {
-            let title = "Sorry, we couldn't confirm your presence. Please try again in a few minutes."
+            let title = "Sorry, we couldn't confirm your presence. Please try again in a few minutes.".localized
             self.presentSimpleAlert(title: title, buttonTitle: "OK")
         }
     }
 
     func showValidationMessage() {
         DispatchQueue.main.async {
-            let title = "Please check the highlighted fields."
+            let title = "Please check the highlighted fields.".localized
             self.presentSimpleAlert(title: title, buttonTitle: "OK")
         }
     }

@@ -43,17 +43,17 @@ class CheckInViewModel {
     func validade() {
         validations = []
         if name.value.isEmpty {
-            let validation = CheckInValidation.name("Please enter your name")
+            let validation = CheckInValidation.name("Please enter your name".localized)
             validations.append(validation)
         } else {
             nameValidation.accept("")
         }
 
         if email.value.isEmpty {
-            let validation = CheckInValidation.email("Please enter your email")
+            let validation = CheckInValidation.email("Please enter your email".localized)
             validations.append(validation)
         } else if !email.value.isValidEmail() {
-            let validation = CheckInValidation.email("Please enter a valid email address")
+            let validation = CheckInValidation.email("Please enter a valid email address".localized)
             validations.append(validation)
         } else {
             emailValidation.accept("")

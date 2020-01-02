@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  Events
+
+  Created by Eduardo Fornari on 02/01/20.
+  Copyright © 2020 Eduardo Fornari. All rights reserved.
+*/
+
+// ---------- App name ----------
+"App name" = "Events";
+
+// ---------- Event Detail View Controller ----------
+"Event" = "Event";
+
+"Address" = "Address";
+
+"People" = "People";
+
+"Coupons" = "Coupons";
+
+"Confirm presence" = "Confirm presence";
+
+"Name" = "Name";
+
+"Confirm" = "Confirm";
+
+"Cancel" = "Cancel";
+
+// ---------- Messages ----------
+"Please enter your name" = "Please enter your name";
+
+"Please enter your email" = "Please enter your email";
+
+"Please enter a valid email address" = "Please enter a valid email address";
+
+"Your presence was confirmed" = "Your presence was confirmed";
+
+"Sorry, we couldn't confirm your presence. Please try again in a few minutes." = "Sorry, we couldn't confirm your presence. Please try again in a few minutes.";
+
+"Please check the highlighted fields." = "Please check the highlighted fields.";
+
+"Sorry, we couldn't load event data. Please try again in a few minutes." = "Sorry, we couldn't load event data. Please try again in a few minutes.";
+
+// ---------- Share ----------
+"See this event I found in the Events app:" = "See this event I found in the Events app:";
+
+"Price" = "Price";
+
+"When" = "When";
