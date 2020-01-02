@@ -28,6 +28,8 @@
 		919C587323BD921E00A82714 /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C587123BD921E00A82714 /* PersonCollectionViewCell.xib */; };
 		919C587723BD93EA00A82714 /* CouponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587623BD93EA00A82714 /* CouponViewModel.swift */; };
 		919C587923BD942B00A82714 /* CouponViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587823BD942B00A82714 /* CouponViewModelTests.swift */; };
+		919C587C23BD94B300A82714 /* CouponCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587A23BD94B300A82714 /* CouponCollectionViewCell.swift */; };
+		919C587D23BD94B300A82714 /* CouponCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C587B23BD94B300A82714 /* CouponCollectionViewCell.xib */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -99,6 +101,8 @@
 		919C587123BD921E00A82714 /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
 		919C587623BD93EA00A82714 /* CouponViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewModel.swift; sourceTree = "<group>"; };
 		919C587823BD942B00A82714 /* CouponViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewModelTests.swift; sourceTree = "<group>"; };
+		919C587A23BD94B300A82714 /* CouponCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCollectionViewCell.swift; sourceTree = "<group>"; };
+		919C587B23BD94B300A82714 /* CouponCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponCollectionViewCell.xib; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -293,6 +297,8 @@
 		919C587423BD922A00A82714 /* Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
+				919C587A23BD94B300A82714 /* CouponCollectionViewCell.swift */,
+				919C587B23BD94B300A82714 /* CouponCollectionViewCell.xib */,
 				919C587023BD921D00A82714 /* PersonCollectionViewCell.swift */,
 				919C587123BD921E00A82714 /* PersonCollectionViewCell.xib */,
 			);
@@ -603,6 +609,7 @@
 				91A9E49623BD37B600D02C3C /* Roboto-Bold.ttf in Resources */,
 				919C585823BD87E500A82714 /* EventCollectionViewCell.xib in Resources */,
 				91A9E49123BD37B600D02C3C /* Roboto-Regular.ttf in Resources */,
+				919C587D23BD94B300A82714 /* CouponCollectionViewCell.xib in Resources */,
 				919C587323BD921E00A82714 /* PersonCollectionViewCell.xib in Resources */,
 				91A9E49223BD37B600D02C3C /* Roboto-BoldItalic.ttf in Resources */,
 				9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */,
@@ -730,6 +737,7 @@
 				91A9E4D523BD520000D02C3C /* EventsApiError.swift in Sources */,
 				919C585223BD874200A82714 /* UIView+LayerInspectable.swift in Sources */,
 				91A9E4A523BD3B6600D02C3C /* CheckIn.swift in Sources */,
+				919C587C23BD94B300A82714 /* CouponCollectionViewCell.swift in Sources */,
 				919C585C23BD890800A82714 /* EventListViewModel.swift in Sources */,
 				9174CD4823BD13190028E3E0 /* AppDelegate.swift in Sources */,
 				919C587223BD921E00A82714 /* PersonCollectionViewCell.swift in Sources */,

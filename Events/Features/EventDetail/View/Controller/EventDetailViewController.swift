@@ -30,7 +30,11 @@ class EventDetailViewController: UIViewController {
         }
     }
     @IBOutlet private weak var couponsLabel: UILabel!
-    @IBOutlet private weak var couponsCollectionView: UICollectionView!
+    @IBOutlet private weak var couponsCollectionView: UICollectionView! {
+        didSet {
+            couponsCollectionView.register(of: CouponCollectionViewCell.self)
+        }
+    }
     @IBOutlet private weak var checkInButton: UIButton!
 
     // MARK: - Init
