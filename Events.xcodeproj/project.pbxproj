@@ -44,6 +44,7 @@
 		919C589A23BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589923BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift */; };
 		919C589E23BDB01E00A82714 /* String+isValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589D23BDB01E00A82714 /* String+isValidEmail.swift */; };
 		919C58A023BDB13E00A82714 /* CheckInViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */; };
+		919C58AF23BDB6B000A82714 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C58AE23BDB6B000A82714 /* String+localized.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -131,6 +132,7 @@
 		919C589923BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentSimpleAlert.swift"; sourceTree = "<group>"; };
 		919C589D23BDB01E00A82714 /* String+isValidEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+isValidEmail.swift"; sourceTree = "<group>"; };
 		919C589F23BDB13E00A82714 /* CheckInViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModelTests.swift; sourceTree = "<group>"; };
+		919C58AE23BDB6B000A82714 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				919C588A23BD9FB900A82714 /* MKMapView+routes.swift */,
 				919C588C23BDA02300A82714 /* MKMapView+ZoomOutForLocations.swift */,
 				919C589D23BDB01E00A82714 /* String+isValidEmail.swift */,
+				919C58AE23BDB6B000A82714 /* String+localized.swift */,
 				919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */,
 				919C585323BD878100A82714 /* UIImageView+loadImage.swift */,
 				919C589923BDAC7100A82714 /* UIViewController+presentSimpleAlert.swift */,
@@ -828,6 +831,7 @@
 				919C588323BD993B00A82714 /* Double+formatedAsCurrency.swift in Sources */,
 				919C588F23BDA25200A82714 /* UIViewControler+share.swift in Sources */,
 				919C585023BD85F800A82714 /* CollectionViewDataSource.swift in Sources */,
+				919C58AF23BDB6B000A82714 /* String+localized.swift in Sources */,
 				919C588723BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
