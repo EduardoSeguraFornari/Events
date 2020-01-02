@@ -342,6 +342,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		919C589523BDA5A500A82714 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				919C589023BDA4C100A82714 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,8 +392,8 @@
 		91A9E49D23BD38AF00D02C3C /* CheckIn */ = {
 			isa = PBXGroup;
 			children = (
-				919C589023BDA4C100A82714 /* Controller */,
 				91A9E4A323BD3B5200D02C3C /* Model */,
+				919C589523BDA5A500A82714 /* View */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
