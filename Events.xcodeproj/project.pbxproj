@@ -26,6 +26,7 @@
 		919C586D23BD918B00A82714 /* PersonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C586C23BD918B00A82714 /* PersonViewModelTests.swift */; };
 		919C587223BD921E00A82714 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587023BD921D00A82714 /* PersonCollectionViewCell.swift */; };
 		919C587323BD921E00A82714 /* PersonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 919C587123BD921E00A82714 /* PersonCollectionViewCell.xib */; };
+		919C587723BD93EA00A82714 /* CouponViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C587623BD93EA00A82714 /* CouponViewModel.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -95,6 +96,7 @@
 		919C586C23BD918B00A82714 /* PersonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModelTests.swift; sourceTree = "<group>"; };
 		919C587023BD921D00A82714 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
 		919C587123BD921E00A82714 /* PersonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionViewCell.xib; sourceTree = "<group>"; };
+		919C587623BD93EA00A82714 /* CouponViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewModel.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				919C586923BD912900A82714 /* PersonViewModel.swift */,
+				919C587623BD93EA00A82714 /* CouponViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -716,6 +719,7 @@
 				91A9E4AF23BD3D0C00D02C3C /* Event.swift in Sources */,
 				91A9E4D323BD51DD00D02C3C /* EventsApiProvider.swift in Sources */,
 				91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */,
+				919C587723BD93EA00A82714 /* CouponViewModel.swift in Sources */,
 				91A9E4CF23BD505600D02C3C /* EventsApiPostEndpoint.swift in Sources */,
 				919C586A23BD912900A82714 /* PersonViewModel.swift in Sources */,
 				919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */,
