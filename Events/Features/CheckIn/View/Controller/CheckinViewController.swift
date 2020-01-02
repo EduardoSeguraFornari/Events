@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class CheckinViewController: UIViewController {
 
+    private var disposeBag = DisposeBag()
+
     private let eventId: String
+    private lazy var viewModel: CheckInViewModel = {
+        return CheckInViewModel(eventId: eventId)
+    }()
 
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var confirmPresenceLabel: UILabel!
@@ -34,8 +40,7 @@ class CheckinViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        nameTextField.delegate = self
-        emailTextField.delegate = self
+        bind()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -48,9 +53,32 @@ class CheckinViewController: UIViewController {
         removeKeyboardObservers()
     }
 
+    // MARK: - Bind
+    private func bind() {
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+
+        nameTextField.rx.text.orEmpty
+            .bind(to: viewModel.name).disposed(by: disposeBag)
+
+        viewModel.nameValidation.bind(to: nameValidationLabel.rx.text).disposed(by: disposeBag)
+
+        emailTextField.rx.text.orEmpty
+            .bind(to: viewModel.email).disposed(by: disposeBag)
+
+        viewModel.emailValidation.bind(to: emailValidationLabel.rx.text).disposed(by: disposeBag)
+
+        viewModel.isValid.bind { (isValid) in
+            let confirmButtonColor = isValid ? #colorLiteral(red: 0.1803921569, green: 0.8, blue: 0.4431372549, alpha: 1) : #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+            let isConfirmButtonEnable = isValid ? true : false
+            self.confirmButton.isEnabled = isConfirmButtonEnable
+            self.confirmButton.backgroundColor = confirmButtonColor
+        }.disposed(by: disposeBag)
+    }
+
     // MARK: - Buttons
     @IBAction func confirmButtonDidTap(_ sender: UIButton) {
-        print("Do Check-In")
+        viewModel.doCheckIn()
     }
 
     @IBAction func cancelButtonDidTap(_ sender: UIButton) {
