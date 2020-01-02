@@ -33,6 +33,7 @@
 		919C588123BD98FA00A82714 /* Date+formatedAsShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */; };
 		919C588323BD993B00A82714 /* Double+formatedAsCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */; };
 		919C588523BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588423BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift */; };
+		919C588723BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -109,6 +110,7 @@
 		919C588023BD98FA00A82714 /* Date+formatedAsShort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+formatedAsShort.swift"; sourceTree = "<group>"; };
 		919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+formatedAsCurrency.swift"; sourceTree = "<group>"; };
 		919C588423BD997300A82714 /* CLLocationCoordinate2D+getAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+getAddress.swift"; sourceTree = "<group>"; };
+		919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView&UIViewController+lock+unlock.swift"; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				919C588223BD993B00A82714 /* Double+formatedAsCurrency.swift */,
 				919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */,
 				919C585323BD878100A82714 /* UIImageView+loadImage.swift */,
+				919C588623BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift */,
 				919C585123BD874200A82714 /* UIView+LayerInspectable.swift */,
 			);
 			path = Extensions;
@@ -754,6 +757,7 @@
 				919C587223BD921E00A82714 /* PersonCollectionViewCell.swift in Sources */,
 				919C588323BD993B00A82714 /* Double+formatedAsCurrency.swift in Sources */,
 				919C585023BD85F800A82714 /* CollectionViewDataSource.swift in Sources */,
+				919C588723BD99C200A82714 /* UIView&UIViewController+lock+unlock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
