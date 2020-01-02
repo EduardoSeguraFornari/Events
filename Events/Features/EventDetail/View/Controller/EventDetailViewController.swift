@@ -19,7 +19,7 @@ class EventDetailViewController: UIViewController {
 
     private let eventViewModel: EventViewModel
     private lazy var viewModel: EventDetailViewModel = {
-        return EventDetailViewModel(viewModel: eventViewModel)
+        return EventDetailViewModel(viewModel: eventViewModel, delegate: self)
     }()
 
     @IBOutlet private weak var titleLabel: UILabel!
@@ -150,6 +150,22 @@ class EventDetailViewController: UIViewController {
     @objc private func shareButtonDidTap() {
         print("Share")
     }
+
+    // MARK: - Alerts
+    func showLoadDataErrorMessage() {
+        DispatchQueue.main.async {
+            let title = "Sorry, we couldn't load event data. Please try again in a few minutes."
+            let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel) { _ in
+                self.navigationController?.popViewController(animated: true)
+            }
+            alertController.addAction(okAction)
+
+            self.present(alertController, animated: true)
+        }
+    }
+
 }
 
 // MARK: - CLLocationManagerDelegate

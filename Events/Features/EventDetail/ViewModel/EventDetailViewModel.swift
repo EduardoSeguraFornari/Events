@@ -12,6 +12,8 @@ import RxCocoa
 
 class EventDetailViewModel {
 
+    weak var delegate: EventDetailViewController?
+
     var eventId: BehaviorRelay<String>
 
     var title: BehaviorRelay<String>
@@ -40,7 +42,8 @@ class EventDetailViewModel {
     var address = BehaviorRelay<String>(value: "")
 
     // MARK: - Init
-    init(viewModel: EventViewModel) {
+    init(viewModel: EventViewModel, delegate: EventDetailViewController) {
+        self.delegate = delegate
         eventId = viewModel.eventId
         title = viewModel.title
         imageURL = viewModel.imageURL
@@ -49,6 +52,10 @@ class EventDetailViewModel {
     }
 
     private func load(with eventId: String) {
+        DispatchQueue.main.async {
+            self.delegate?.lock()
+        }
+
         let apiProvider = EventsApiProvider()
         apiProvider.request(for:
         EventsApiGetEndpoint.event(identifier: eventId)) { [weak self] (result: Result<EventDetail, Error>) in
@@ -57,6 +64,7 @@ class EventDetailViewModel {
             case .success(let eventDetail):
                 self?.setup(with: eventDetail)
             case .failure(let error):
+                self?.delegate?.showLoadDataErrorMessage()
                 print(error.localizedDescription)
             }
         }
@@ -93,6 +101,8 @@ class EventDetailViewModel {
                 return CouponViewModel(coupon: coupon)
             }
             self.couponsDataSource.updateItems(coupons)
+
+            self.delegate?.unlock()
         }
     }
 
