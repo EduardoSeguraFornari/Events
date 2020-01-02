@@ -12,7 +12,8 @@
 		9174CD5123BD131B0028E3E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5023BD131B0028E3E0 /* Assets.xcassets */; };
 		9174CD5423BD131B0028E3E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9174CD5223BD131B0028E3E0 /* LaunchScreen.storyboard */; };
 		919C584623BD848B00A82714 /* EventViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C584523BD848B00A82714 /* EventViewModelTests.swift */; };
-		919C584823BD850100A82714 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C584723BD850100A82714 /* UICollectionViewExtensions.swift */; };
+		919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */; };
+		919C585023BD85F800A82714 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919C584F23BD85F800A82714 /* CollectionViewDataSource.swift */; };
 		91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A9E47D23BD374600D02C3C /* EventsViewController.swift */; };
 		91A9E48023BD374600D02C3C /* EventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E47E23BD374600D02C3C /* EventsViewController.xib */; };
 		91A9E48E23BD37B600D02C3C /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */; };
@@ -68,7 +69,8 @@
 		9174CD5A23BD131B0028E3E0 /* EventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9174CD6023BD131B0028E3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		919C584523BD848B00A82714 /* EventViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModelTests.swift; sourceTree = "<group>"; };
-		919C584723BD850100A82714 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtensions.swift; sourceTree = "<group>"; };
+		919C584F23BD85F800A82714 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		91A9E47D23BD374600D02C3C /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		91A9E47E23BD374600D02C3C /* EventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsViewController.xib; sourceTree = "<group>"; };
 		91A9E48223BD37B500D02C3C /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -158,8 +160,9 @@
 		9174CD4623BD13190028E3E0 /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				919C584923BD857500A82714 /* Data Source */,
+				919C584C23BD85DF00A82714 /* Extensions */,
 				91A9E49B23BD388200D02C3C /* Features */,
-				91A9E49A23BD386300D02C3C /* Extensions */,
 				91A9E48123BD379A00D02C3C /* Fonts */,
 				91A9E4A123BD394000D02C3C /* Service */,
 				91A9E4A023BD38F200D02C3C /* Storyboards */,
@@ -186,6 +189,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		919C584923BD857500A82714 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				919C584F23BD85F800A82714 /* CollectionViewDataSource.swift */,
+			);
+			path = "Data Source";
+			sourceTree = "<group>";
+		};
+		919C584C23BD85DF00A82714 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				919C584D23BD85DF00A82714 /* UICollectionViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		91A9E48123BD379A00D02C3C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,14 +222,6 @@
 				91A9E48323BD37B500D02C3C /* Roboto-ThinItalic.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		91A9E49A23BD386300D02C3C /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				919C584723BD850100A82714 /* UICollectionViewExtensions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		91A9E49B23BD388200D02C3C /* Features */ = {
@@ -608,11 +619,12 @@
 				91A9E4D323BD51DD00D02C3C /* EventsApiProvider.swift in Sources */,
 				91A9E47F23BD374600D02C3C /* EventsViewController.swift in Sources */,
 				91A9E4CF23BD505600D02C3C /* EventsApiPostEndpoint.swift in Sources */,
-				919C584823BD850100A82714 /* UICollectionViewExtensions.swift in Sources */,
+				919C584E23BD85DF00A82714 /* UICollectionViewExtensions.swift in Sources */,
 				91A9E4CA23BD4F0F00D02C3C /* EventsApiGetEndpoint.swift in Sources */,
 				91A9E4D523BD520000D02C3C /* EventsApiError.swift in Sources */,
 				91A9E4A523BD3B6600D02C3C /* CheckIn.swift in Sources */,
 				9174CD4823BD13190028E3E0 /* AppDelegate.swift in Sources */,
+				919C585023BD85F800A82714 /* CollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
