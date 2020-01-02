@@ -10,6 +10,8 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
+    private let viewModel = EventListViewModel()
+
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             collectionView.delegate = self
@@ -21,6 +23,7 @@ class EventsViewController: UIViewController {
         super.viewDidLoad()
 
         setupNavigationItems()
+        bind()
     }
 
     // MARK: - Navigation Items
@@ -30,11 +33,19 @@ class EventsViewController: UIViewController {
             navigationController?.navigationBar.prefersLargeTitles = true
         }
     }
+
+    // MARK: - Bind
+    private func bind() {
+        viewModel.eventsDataSource.delegate = collectionView
+        collectionView.dataSource = viewModel.eventsDataSource
+    }
+
 }
 
 // MARK: - UICollectionViewDelegate
 extension EventsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let eventViewModel = viewModel.model(at: indexPath.row)
+        print(eventViewModel.title.value)
     }
 }
