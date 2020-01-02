@@ -107,6 +107,13 @@ class CheckinViewController: UIViewController {
         }
     }
 
+    func showValidationMessage() {
+        DispatchQueue.main.async {
+            let title = "Please check the highlighted fields."
+            self.presentSimpleAlert(title: title, buttonTitle: "OK")
+        }
+    }
+
     // MARK: - Keyboard Observers
     private func addKeyboardObservers() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow),
