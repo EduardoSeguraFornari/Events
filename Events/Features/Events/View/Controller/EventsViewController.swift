@@ -10,7 +10,11 @@ import UIKit
 
 class EventsViewController: UIViewController {
 
-    private let viewModel = EventListViewModel()
+    private lazy var viewModel: EventListViewModel = {
+        return EventListViewModel(delegate: self)
+    }()
+
+    let refreshControl = UIRefreshControl()
 
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
@@ -41,10 +45,23 @@ class EventsViewController: UIViewController {
 
     // MARK: - Bind
     private func bind() {
+        collectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching events...".localized)
+
         viewModel.eventsDataSource.delegate = collectionView
         collectionView.dataSource = viewModel.eventsDataSource
     }
 
+    func stopRefresh() {
+        DispatchQueue.main.async {
+            self.refreshControl.endRefreshing()
+        }
+    }
+
+    @objc private func refresh() {
+        viewModel.load()
+    }
 }
 
 // MARK: - UICollectionViewDelegate

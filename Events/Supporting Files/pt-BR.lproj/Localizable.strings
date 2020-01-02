@@ -41,6 +41,8 @@
 
 "Sorry, we couldn't load event data. Please try again in a few minutes." = "Desculpe, não conseguimos carregar os dados do evento. Por favor, tente novamente em alguns minutos.";
 
+"Fetching events..." = "Buscando eventos...";
+
 // ---------- Share ----------
 "See this event I found in the Events app:" = "Veja esse evento que eu encontrei no aplicativo Eventos:";
 

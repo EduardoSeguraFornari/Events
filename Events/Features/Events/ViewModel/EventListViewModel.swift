@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 class EventListViewModel {
+
+    private weak var delegate: EventsViewController?
 
     lazy var eventsDataSource: CollectionViewDataSource<EventCollectionViewCell, EventViewModel> = {
         return CollectionViewDataSource { cell, viewModel in
@@ -17,21 +20,25 @@ class EventListViewModel {
     }()
 
     // MARK: - Init
-    init() {
+    init(delegate: EventsViewController? = nil) {
+        self.delegate = delegate
         load()
     }
 
-    private func load() {
+    func load() {
         let apiProvider = EventsApiProvider()
         apiProvider.request(for: EventsApiGetEndpoint.events) { [weak self] (result: Result<[Event], Error>) in
-            guard let self = self else { return }
+
+            self?.delegate?.stopRefresh()
+
             switch result {
             case .success(let events):
                 let eventViewModels = events.compactMap({ event -> EventViewModel? in
                     return EventViewModel(event: event)
                 })
-                self.setup(with: eventViewModels)
+                self?.setup(with: eventViewModels)
             case .failure(let error):
+                self?.setup(with: [])
                 print(error.localizedDescription)
             }
         }
