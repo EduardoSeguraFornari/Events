@@ -18,6 +18,6 @@ jobs:
     - name: pod install
       run: bundle exec pod install || bundle exec pod install --repo-update
     - name: Build
-      run: xcodebuild build -workspace Events.xcworkspace -scheme Events -destination 'generic/platform=iOS' | xcpretty -allowProvisioningUpdates
+      run: xcodebuild build -workspace Events.xcworkspace -scheme Events -destination 'generic/platform=iOS' | xcpretty
     - name: Run tests
       run: xcodebuild test -workspace Events.xcworkspace -scheme Events -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' | xcpretty -s
