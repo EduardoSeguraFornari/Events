@@ -17,6 +17,8 @@ jobs:
       run: bundle install
     - name: pod install
       run: bundle exec pod install || bundle exec pod install --repo-update
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_12.4.app
     - name: Build
       run: xcodebuild build -workspace Events.xcworkspace -scheme Events -destination 'generic/platform=iOS' | xcpretty
     - name: Run tests
