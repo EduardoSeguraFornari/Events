@@ -13,8 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Sxripts
+    - name: Bundle Install
       run: bundle install
+    - name: pod install
       run: bundle exec pod install || bundle exec pod install --repo-update
     - name: Build
       run: xcodebuild build -workspace Events.xcworkspace -scheme Events -destination 'generic/platform=iOS' | xcpretty
