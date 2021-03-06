@@ -16,4 +16,4 @@ jobs:
     - name: Build
       run: xcodebuild build -workspace Events.xcworkspace -scheme Events -destination 'generic/platform=iOS' | xcpretty
     - name: Run tests
-      run: xcodebuild test -workspace Events.xcworkspace -scheme Events -destination 'platform=iOS Simulator,name=iPhone SE,OS=12.4' | xcpretty -s
+      run: xcodebuild test -workspace Events.xcworkspace -scheme Events -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' | xcpretty -s
